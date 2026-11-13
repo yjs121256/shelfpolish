@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShelfPolish — Shopify product listing cleanup, fixed price</title>
+<meta name="description" content="Fixed-price Shopify listing cleanup: titles, descriptions, SEO fields and image alt text rewritten from your own product data. Import-ready CSV, change log, and a list of items to confirm. No store login.">
+<style>
+:root{--ink:#1b2333;--mut:#5b6678;--acc:#1f6f5c;--bg:#f7f8fa;--card:#fff;--line:#e3e7ee}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+.w{max-width:960px;margin:0 auto;padding:0 20px}header{background:#fff;border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}nav b{font-size:20px}nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:56px 0 40px}h1{font-size:38px;line-height:1.15;margin:0 0 14px}.lead{font-size:19px;color:var(--mut);max-width:680px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;margin:18px 12px 0 0}.btn.o{background:#fff;color:var(--acc);border:1px solid var(--acc)}
+section{padding:36px 0}h2{font-size:26px;margin:0 0 14px}.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}.c h3{margin:0 0 6px;font-size:18px}.price{font-size:30px;font-weight:700}.small{font-size:14px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#eef1f6}
+.bad{color:#a33}.ok{color:#1f6f5c}.note{background:#fff8e1;border:1px solid #f0dd9a;padding:10px 14px;border-radius:8px;font-size:14px}
+footer{padding:30px 0;color:var(--mut);font-size:14px;border-top:1px solid var(--line);margin-top:20px}ul{padding-left:20px}
+</style>
+</head>
+<body>
+<header><div class="w"><nav><b>ShelfPolish</b><div><a href="#how">How it works</a><a href="#sample">Sample</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div></nav></div></header>
+
+<div class="w hero">
+  <h1>Your Shopify product pages, cleaned up and ready to import.</h1>
+  <p class="lead">Send us your product export. We rewrite titles, descriptions, SEO fields and image alt text using only the facts in your own data, then return an import-ready CSV, a before/after change log, and a short list of things for you to confirm. Fixed price. No store login. No calls.</p>
+  <a class="btn" href="mailto:yjs121256@gmail.com?subject=Free%20listing%20audit%20request&amp;body=Hi%2C%20please%20run%20a%20free%20listing%20audit.%0AStore%20URL%3A%20">Get a free listing audit</a>
+  <a class="btn o" href="#pricing">See pricing</a>
+  <p class="small">Free audit = a spreadsheet showing which products have empty or thin descriptions, missing alt text, duplicate titles and more, plus 3 sample rewrites. Contact: <a href="mailto:yjs121256@gmail.com">yjs121256@gmail.com</a>.</p>
+</div>
+
+<section id="how"><div class="w"><h2>How it works</h2>
+<div class="g3">
+<div class="c"><h3>1. Send your export</h3><p>In Shopify admin, export your products as CSV and email it to us, plus any facts you want used (materials, sizes, care) and words you never use.</p></div>
+<div class="c"><h3>2. We rewrite and check</h3><p>AI drafts the copy from your data. Automated checks then flag any number that is not in your source data, a list of strong-claim words (such as "organic" or "waterproof") that your data does not support, and any SEO field over its length limit.</p></div>
+<div class="c"><h3>3. You import</h3><p>You get <code>import_ready.csv</code>, <code>changelog.csv</code>, <code>flags.csv</code> and a 1-page guide. Only five columns change; everything else is copied as-is. Test one product, then import the rest.</p></div>
+</div></div></section>
+
+<section id="sample"><div class="w"><h2>What a change log looks like</h2>
+<p class="small">Fictional store and products, produced by our own tooling to show the format. No real customer data.</p>
+<table><tr><th>Field</th><th>Before</th><th>After</th></tr>
+<tr><td>Title</td><td class="bad">STONEWARE MUG BLUE</td><td class="ok">Stoneware Mug - Blue 350ml</td></tr>
+<tr><td>Description</td><td class="bad">(empty)</td><td class="ok">A blue stoneware mug in a 350ml size. Product weight is about 420 g. Material: stoneware · Size: 350ml · Colour: blue</td></tr>
+<tr><td>SEO description</td><td class="bad">(empty)</td><td class="ok">Blue stoneware mug in a 350ml size.</td></tr>
+<tr><td>Image alt text</td><td class="bad">(empty)</td><td class="ok">Blue stoneware mug 350ml</td></tr>
+<tr><td>flags.csv</td><td colspan="2">A draft that said "burns for up to 40 hours" was flagged because "40" is not in the source data. It is left for you to confirm or remove.</td></tr></table>
+<p><a href="sample_listing_audit.xlsx">Download a sample audit spreadsheet (fictional data)</a></p></div></section>
+
+<section id="pricing"><div class="w"><h2>Fixed pricing</h2>
+<div class="g3">
+<div class="c"><h3>Starter</h3><div class="price">$129</div><p>Up to 50 products<br>Delivered in 5 business days</p></div>
+<div class="c"><h3>Standard</h3><div class="price">$249</div><p>Up to 200 products<br>Delivered in 7 business days</p></div>
+<div class="c"><h3>Growth</h3><div class="price">$449</div><p>Up to 500 products<br>Delivered in 10 business days</p></div>
+</div>
+<p>More than 500 products? Email us for a quote. Orders are placed via Upwork (escrow) or by emailing <a href="mailto:yjs121256@gmail.com">yjs121256@gmail.com</a>. This site does not take payment. Nothing is charged before you agree to the scope and price.</p>
+<p class="note">Each package includes: title cleanup, rewritten descriptions, SEO title (60 characters or fewer) and SEO description (160 or fewer), image alt text, change log, items-to-confirm list, import guide. If the file will not import or does not match what is described here, we fix it; if we cannot, we refund.</p></div></section>
+
+<section><div class="w"><h2>What we do not do</h2><ul>
+<li>We never log in to your store. You import the file yourself.</li>
+<li>We do not edit images.</li>
+<li>We do not promise rankings, traffic or sales.</li>
+<li>We do not write medical or health-benefit claims, and we do not add specifications that are not in your data.</li>
+<li>Copy is in English. Other languages: ask first.</li></ul></div></section>
+
+<section id="faq"><div class="w"><h2>FAQ</h2>
+<p><b>Is the copy written by AI?</b><br>Yes, drafted with AI from your data, then run through automated checks. Numbers and strong-claim words we cannot find in your data are listed for you to confirm instead of being kept silently.</p>
+<p><b>Will it overwrite my store?</b><br>Only if you choose to import. Keep your original export as a backup; re-importing it restores the old text.</p>
+<p><b>Who are you?</b><br>Yunju Company, a sole proprietorship in Gwangju, South Korea (Jisung Yun). We work in writing, by email, in English. We are new and have no customer reviews yet; that is why the first projects are priced below comparable services.</p>
+<p><b>What do you need from me?</b><br>A product export CSV and, optionally, a list of facts and rules. See the <a href="order-brief.txt">order brief</a>.</p>
+<p><b>How do I order?</b><br>Email <a href="mailto:yjs121256@gmail.com">yjs121256@gmail.com</a>, or place the order on Upwork. Payment is through Upwork escrow or arranged by email. There is no payment form on this site.</p></div></section>
+
+<footer><div class="w">© 2026 Yunju Company · Gwangju, South Korea · <a href="mailto:yjs121256@gmail.com">yjs121256@gmail.com</a> · <a href="terms.html">Terms</a></div></footer>
+</body></html>

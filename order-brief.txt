@@ -1,0 +1,11 @@
+# ShelfPolish — Order brief (copy into an email reply)
+
+Thanks for choosing a package. To start I need three things. No store login is needed.
+
+1. **Product export.** In Shopify admin: Products > Export > "All products" > "CSV for Excel, Numbers, or other spreadsheet programs". Attach the CSV.
+2. **Facts I may use.** Anything not in the CSV that you want in the copy (materials, sizes, care, shipping rules). I write ONLY from facts in your CSV and this list. Numbers and strong-claim words I cannot find in your data go into a "please confirm" sheet (flags.csv).
+3. **Rules.** Words you never use, words you always use, spelling (US/UK), tone (e.g. plain, warm, luxury), and any claims you may NOT make (e.g. health or medical claims).
+
+What you get back: `import_ready.csv` (only Title, Body (HTML), SEO Title, SEO Description and Image Alt Text changed), `changelog.csv` (before/after for every change), `flags.csv` (items to confirm), and a 1-page import guide.
+
+**Before you import:** back up (keep your original export). Import ONE product first and check it. Then import the rest with "Overwrite any current products that have the same handle" ticked.
