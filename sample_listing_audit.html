@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Sample listing audit (fictional) — ShelfPolish</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font:16px/1.5 system-ui,sans-serif;max-width:960px;margin:30px auto;padding:0 20px;color:#1b2333}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid #e3e7ee;padding:8px;text-align:left;vertical-align:top}th{background:#eef1f6}
+.small{color:#5b6678}</style></head>
+<body>
+<p><a href="index.html">&larr; ShelfPolish</a></p>
+<h1>Sample listing audit</h1>
+<p class="small">Fictional store and products, produced by our tooling to show the format. No real customer data.</p>
+<table>
+<tr><th>Check</th><th>Products affected</th><th>% of catalog</th></tr>
+<tr><td>No product description</td><td>3</td><td>=IF(7=0,0,B5/7)</td></tr>
+<tr><td>Description under 200 characters</td><td>4</td><td>=IF(7=0,0,B6/7)</td></tr>
+<tr><td>Same description used on another product</td><td>2</td><td>=IF(7=0,0,B7/7)</td></tr>
+<tr><td>Title is ALL CAPS</td><td>2</td><td>=IF(7=0,0,B8/7)</td></tr>
+<tr><td>Title over 70 characters</td><td>1</td><td>=IF(7=0,0,B9/7)</td></tr>
+<tr><td>Same title as another product</td><td>2</td><td>=IF(7=0,0,B10/7)</td></tr>
+<tr><td>No SEO title set</td><td>5</td><td>=IF(7=0,0,B11/7)</td></tr>
+<tr><td>No SEO description set</td><td>5</td><td>=IF(7=0,0,B12/7)</td></tr>
+<tr><td>SEO title over 60 characters</td><td>1</td><td>=IF(7=0,0,B13/7)</td></tr>
+<tr><td>SEO description over 160 characters</td><td>0</td><td>=IF(7=0,0,B14/7)</td></tr>
+<tr><td>Image(s) without alt text</td><td>3</td><td>=IF(7=0,0,B15/7)</td></tr>
+<tr><td>No product image</td><td>1</td><td>=IF(7=0,0,B16/7)</td></tr>
+<tr><td>No tags</td><td>3</td><td>=IF(7=0,0,B17/7)</td></tr>
+<tr><td>No product type</td><td>0</td><td>=IF(7=0,0,B18/7)</td></tr>
+</table><h2>Products</h2><table>
+<tr><th>Handle</th><th>Title</th><th>Description chars</th><th>Issue score</th><th>Issues</th></tr>
+<tr><td>stoneware-mug-blue</td><td>STONEWARE MUG BLUE</td><td>0</td><td>10</td><td>No product description; Title is ALL CAPS; No SEO title set; No SEO description set; Image(s) without alt text; No tags</td></tr>
+<tr><td>stoneware-mug-green</td><td>STONEWARE MUG GREEN</td><td>0</td><td>10</td><td>No product description; Title is ALL CAPS; No SEO title set; No SEO description set; Image(s) without alt text; No tags</td></tr>
+<tr><td>desk-lamp-black</td><td>Desk Lamp</td><td>0</td><td>10</td><td>No product description; No SEO title set; No SEO description set; No product image; No tags</td></tr>
+<tr><td>wool-scarf-grey</td><td>Wool Scarf</td><td>22</td><td>9</td><td>Description under 200 characters; Same description used on another product; Same title as another product; No SEO title set; No SEO description set</td></tr>
+<tr><td>wool-scarf-navy</td><td>Wool Scarf</td><td>22</td><td>9</td><td>Description under 200 characters; Same description used on another product; Same title as another product; No SEO title set; No SEO description set</td></tr>
+<tr><td>soy-candle-cedar</td><td>Soy Candle Cedar & Amber Scented Candle Home Fragrance Gift Idea For Her Long Burning Candle 8oz</td><td>11</td><td>6</td><td>Description under 200 characters; Title over 70 characters; SEO title over 60 characters; Image(s) without alt text</td></tr>
+<tr><td>canvas-tote-natural</td><td>Canvas Tote Bag - Natural</td><td>107</td><td>2</td><td>Description under 200 characters</td></tr>
+</table><p class="small"><a href="sample_listing_audit.csv">Download this sample as CSV</a></p></body></html>
